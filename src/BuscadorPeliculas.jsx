@@ -60,6 +60,3 @@ export const BuscadorPeliculas = () => {
     </div>
   )
 }
-
-// jessie8787 https://www.themoviedb.org/settings/api
-// aletta 6:18:30
