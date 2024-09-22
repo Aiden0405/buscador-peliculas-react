@@ -1,0 +1,149 @@
+/* Estilos generales */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5a555b;
+  box-sizing: border-box; /* Add box-sizing to ensure consistent layout */
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto; /* Add some breathing room */
+  padding: 20px;
+  background-color: #fff; /* Add a white background to the container */
+  border: 1px solid #ddd; /* Add a subtle border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 10px; /* Add a subtle border radius */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Add a darker text color for better contrast */
+}
+form {
+  /* Center the form horizontally */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+  /* Add some padding to create space around the form */
+  padding: 20px;
+  background-color: #f9f9f9; /* Add a light gray background */
+  border: 1px solid #ccc; /* Add a subtle border */
+  border-radius: 4px; /* Add a slight curve to the corners */
+}
+
+input[type="text"] {
+  /* Make the input field more prominent */
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Consistent font size */
+  
+  /* Add some visual feedback when the input field is focused */
+  transition: border-color 0.2s ease;
+}
+input[type="text"]:focus {
+  border-color: #007bff; /* Highlight the input field when focused */
+}
+
+button {
+  /* Make the button more prominent and visually appealing */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Smooth transition effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Change the button color on hover */
+}
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px; /* Add some space between the form and the movie list */
+}
+
+.movie-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease; /* Add a smooth transition effect */
+}
+
+.movie-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle hover effect */
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px; /* Add a subtle border radius to the image */
+}
+
+.movie-card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333; /* Add a darker text color for better contrast */
+}
+
+.movie-card p {
+  margin-bottom: 5px;
+  color: #666; /* Add a darker text color for better contrast */
+}
+
+/* Estilos para móviles */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  .movie-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .movie-card {
+    padding: 10px;
+  }
+
+  .movie-card h2 {
+    font-size: 16px;
+  }
+}
+
+.movie-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none; 
+}
+
+.movie-card a img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  object-fit: cover;
+  max-width: 100%; 
+  max-height: 100%;
+}
